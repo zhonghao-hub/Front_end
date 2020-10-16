@@ -1,10 +1,11 @@
-* Define NPM
-    * A package manager
-* NPM Packages
-    * Express(framework)
-    * Mongoose
+#Intro to NPM
 
-* Use 'npm install <packagename>' to install a package
-* Use 'require(<packagename>)' to include a package
-* Use the "--save" flag to install packages: 
-    * automaticly save the installed package into package.json file
+* Define NPM
+* Explain why NPM is awesome
+* Intro the packages we will end up using
+
+
+#Installing and Using Packages
+
+* Use `npm install` to install a package
+* Use `require()` to include a package

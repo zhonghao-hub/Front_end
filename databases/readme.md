@@ -1,57 +1,102 @@
-Mongo Commands:
-1. mongod
-2. mongo
-3. help
-4. show
-    > show dbs<!-- show  all databases mongo have -->
-    admin   0.000GB
-    config  0.000GB
-    local   0.000GB
+#Databases
 
-    > show collections <!-- show collections in current db(demo) -->
-    dogs
+##Intro to Databases
+* What is a database? 
+    * A collection of information/data
+    * Has an interface
+* SQL(relational) vs. NoSQL(non-relational)
 
-5. use
-    if exist: open it
-    else: creat one and open it 
-    > use demo
-    switched to db demo
+#Intro to MongoDB
+* What is MongoDB?
+* Why are we using it?
+* Let's Install It!
 
-6. insert
-    > db.dogs.insert({name: "Rusty", breed: "Mutt"})<!-- 这里的db指的是current database(demo) -->
-    WriteResult({ "nInserted" : 1 })
+#Our First Mongo Commands
+* mongod
+* mongo
+* help
+* show dbs
+* use
+* insert
+* find
+* update
+* remove
 
-7. find
-    > db.dogs.find()
-    { "_id" : ObjectId("5f763f04054dc31a8735018c"), "name" : "Rusty", "breed" : "Mutt" } 
-    { "_id" : ObjectId("5f764087054dc31a8735018d"), "name" : "Lucy", "breed" : "Mutt" }  
-    { "_id" : ObjectId("5f764094054dc31a8735018e"), "name" : "Lulu", "breed" : "Poodle" }
-    > db.dogs.find({name: "Rusty"})
-    { "_id" : ObjectId("5f763f04054dc31a8735018c"), "name" : "Rusty", "breed" : "Mutt" }
-
-8. update
-    > db.dogs.update({name: "Rusty"}, {$set: {name: "Tater", isCute: true}})
-    WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
-    > db.dogs.find()
-    { "_id" : ObjectId("5f763f04054dc31a8735018c"), "name" : "Tater", "breed" : "Mutt", "isCute" : true }
-    { "_id" : ObjectId("5f764087054dc31a8735018d"), "name" : "Lucy", "breed" : "Mutt" }
-    { "_id" : ObjectId("5f764094054dc31a8735018e"), "breed" : "Lab" }
-    { "_id" : ObjectId("5f7640a1054dc31a8735018f"), "name" : "Lulu" }
-
-9. remove
-    > db.dogs.remove({breed: "Lab"})
-    WriteResult({ "nRemoved" : 1 })
-    > db.dogs.find()
-    { "_id" : ObjectId("5f763f04054dc31a8735018c"), "name" : "Tater", "breed" : "Mutt", "isCute" : true }
-    { "_id" : ObjectId("5f764087054dc31a8735018d"), "name" : "Lucy", "breed" : "Mutt" }
-    { "_id" : ObjectId("5f7640a1054dc31a8735018f"), "name" : "Lulu" }
-
-10. drop()
-    delete the whole dogs collections
-    > db.dogs.drop()
-    true
+#Mongoose
+* What Is Mongoose?
+* Why are we using it?
+* Interact with a Mongo Database using Mongoose
 
 
 
-Mongoose:
+
+
+
+
+
+
+
+
+
+
+
+USERS TABLE
+id | name  |  age  |  city
+-------------------------
+1  | Tim   |  57   |  NYC           
+2  | Ira   |  24   |  Missoula 
+3  | Sue   |  40   |  Boulder
+
+
+COMMENTS TABLE
+id |       text  
+--------------------------
+1  | "lol"
+2  | "Come visit Montana!"   
+3  | "I love puppies!!!"
+4  | "Seriously Montana is great!"
+
+
+USER/COMMENTS JOIN TABLE
+userId  |  commentId
+---------------------------
+   1         3
+   2         2
+   2         4
+   3         1
+   
+   
+   
+==========================
+A NON-RELATIONAL DATABASE:
+==========================
+{
+  name: "Ira",
+  age: 24,
+  city: Missoula,
+  comments: [
+    {text: "Come visit Montana!"},
+    {text: "Seriously Montana is great!"},
+    {text: "Why does no one care about Montana???"}
+  ],
+  favColor: "purple"
+}
+
+
+{
+  name: "Tammy",
+  age: 24,
+  city: Missoula,
+  comments: [
+    {text: "Come visit Montana!"},
+    {text: "Seriously Montana is great!"},
+    {text: "Why does no one care about Montana???"}
+  ],
+  favFood: "Ribeye"
+}
+
+
+
+
+
 
