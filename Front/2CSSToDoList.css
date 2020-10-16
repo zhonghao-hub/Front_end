@@ -1,0 +1,22 @@
+body {
+	background: orange;
+}
+
+/*element selector*/
+li {
+	border: 2px solid red;
+}
+
+/*id selector*/
+#special {
+	color: blue;
+	background-color: yellow;
+}
+
+/*class selector*/
+.completed {
+	/*walk though line(nultiple styles)*/
+	text-decoration: line-through;/*add line through*/
+	
+
+}

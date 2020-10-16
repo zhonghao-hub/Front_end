@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Gallery</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+	<link rel="stylesheet" type="text/css" href="3BoostrapImageGallery_Thumnail_FontAwesome.css">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</head>
+<body>
+
+	<!-- ===================navbar======================= -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+<!-- navbar-inverse: navbar has black background
+navbar-fixed-top: navbar doesn't disappear when scrolling, it fix at the top --> 
+	<div class="container">
+
+		<div class="navbar-header">
+
+			<!-- creat a humberger button including 4 spans -->
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+				<!-- data-target should be the same as the id in the collapse + # at front-->
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		     </button>
+
+		     <!-- creat a header -->
+			<a class="navbar-brand">
+				<span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
+				Images
+			</a>
+
+		</div>
+
+
+		<div class="collapse navbar-collapse" id="bs-nav-demo"><!-- collapse: disappear when not enough space --> <!-- id keep same in the data-target in the humberger -->
+		<ul class="nav navbar-nav"><!-- at left -->
+			<li><a href="#"> About</a></li>
+			<li><a href="#"> Contact</a></li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right"><!-- at right -->
+			<li><a href="#">Sign up</a></li>
+			<li><a href="#"> Login</a></li>
+		</ul>
+		</div>
+
+
+	</div>
+</nav>
+
+
+<div class="container">
+	<!--====================Jumbotron======================== -->
+	<div class="jumbotron">
+		<h1>
+			<i class="fas fa-camera-retro"></i>
+			The Image Gallery
+		</h1>
+		<p>I bunch of beautiful images.</p>
+	</div>
+
+<!-- ================================Grid=========================== -->
+	<div class="row">
+		<div class="col-lg-4 col-md-6 col-sm-12">
+			<div class="thumbnail"><!-- ==============Thumbnail=============== -->
+				<!-- fix image in a frame -->
+				<img src="images/0.jpg">
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-6 col-sm-12">
+			<div class="thumbnail">
+				<img src="images/1.jpg">
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-6 col-sm-12">
+			<div class="thumbnail">
+				<img src="images/2.jpg">
+			</div>
+		</div>
+
+
+<!-- don't need to add row, since each img takes 4 cells, they will automaticly become second row. -->
+		<div class="col-lg-4 col-md-6 col-sm-12">
+			<div class="thumbnail">
+				<img src="images/3.jpg">
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-6 col-sm-12">
+			<div class="thumbnail">
+				<img src="images/4.jpg">
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-6 col-sm-12">
+			<div class="thumbnail">
+				<img src="images/5.jpg">
+			</div>
+		</div>
+
+
+		<div class="col-lg-4 col-md-6 col-sm-12">
+			<div class="thumbnail">
+				<img src="images/6.jpg">
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-6 col-sm-12">
+			<div class="thumbnail">
+				<img src="images/7.jpg">
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-6 col-sm-12">
+			<div class="thumbnail">
+				<img src="images/8.jpg">
+			</div>
+		</div>
+		
+	</div>
+
+	
+</div><!-- container -->
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

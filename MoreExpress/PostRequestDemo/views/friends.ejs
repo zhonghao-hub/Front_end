@@ -1,0 +1,12 @@
+<h1>Friends list here!</h1>
+
+<% friends.forEach(function(f){ %>
+    <li><%= f %></li>
+<% }); %>
+
+<!-- 建造一个form， 功能是连接到一个新的website -->
+<form action="/addFriend" method="POST">
+    <input type="text" placeholder="name" name="newfriend">
+    <!-- here newfriend = "输入的名字" -->
+    <button>A new friend</button>
+</form>

@@ -1,0 +1,14 @@
+{
+  "name": "databases",
+  "version": "1.0.0",
+  "description": "Mongo Commands:\r 1. mongod\r 2. mongo\r 3. help\r 4. show\r     > show dbs<!-- show  all databases mongo have -->\r     admin   0.000GB\r     config  0.000GB\r     local   0.000GB",
+  "main": "cat.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zhonghao",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^5.10.7"
+  }
+}

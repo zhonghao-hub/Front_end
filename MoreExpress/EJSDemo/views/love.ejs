@@ -1,0 +1,18 @@
+<%- include("partials/header") %>
+
+<h1>You fell in love with : <%= thingVar.toUpperCase() %></h1>
+<!-- inside <%= %> is treated as javascript-->
+<% if(thingVar.toLowerCase() === "rusty"){ %>
+    <p>Good Choice</p>
+<% } else { %>
+    <p>Bad Choice, You should  have rusty</p>
+
+<% }%> 
+<p>P.S this is love.ejs file</p>
+
+<%- include("partials/footer") %>
+
+
+
+<!-- <%= %>:  -->
+<!-- <% %>: if use logic inside, don't use "=" -->

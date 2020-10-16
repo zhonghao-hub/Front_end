@@ -1,0 +1,26 @@
+/*selector {
+	property:value;
+}*/
+h1 {
+	color: purple;
+/*	border-color: purple;
+	border-width: 5px;
+	border-style: solid;*/
+
+	border: 2px dashed purple;
+
+}
+
+
+li{
+	color: #FF00DD;
+}
+
+h4 {
+	background: rgba(255, 100, 80, 0.5);
+}
+body{
+	background: url(download.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
